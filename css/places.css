@@ -1,0 +1,74 @@
+body {
+  background: linear-gradient(30deg, rgb(77, 77, 77), rgb(58, 77, 77));
+  color: rgb(68, 68, 68);
+}
+
+header {
+  position: static;
+}
+
+header a {
+  color: aqua;
+}
+
+#logo a {
+  color: aqua;
+}
+
+header nav a:hover {
+  background-color: aqua;
+  color: rgb(77, 77, 77);
+}
+
+main #grid {
+  width: 1200px;
+  margin: 0 auto 30px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+main .card {
+  display: flex;
+  border-radius: 6px;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+  background-color: white;
+  overflow: hidden;
+}
+
+main img {
+  width: 300px;
+  height: 280px;
+  object-fit: cover;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 24px;
+}
+
+.card-content h2 {
+  margin: 0;
+}
+
+.action {
+  text-align: right;
+}
+
+.card-content a {
+  color: rgb(22, 211, 228);
+  text-decoration: none;
+  font-weight: bold;
+  padding: 6px;
+  border-radius: 4px;
+}
+
+.card-content a:hover {
+  background-color: rgb(235, 253, 255);
+}
+
+.card:nth-of-type(3) {
+  grid-column: 1 / span 2;
+}
